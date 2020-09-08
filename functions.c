@@ -6,3 +6,8 @@ typedef struct lista{
 	struct lista* proximo;
 } Lista;
 
+void inicializaNoDaLista( Lista* listPtr, Lista* novoNo, int infoDoNo ){
+	(*listPtr).proximo = novoNo;
+	(*novoNo).info = infoDoNo;
+}
+
