@@ -12,7 +12,7 @@ void inicializaNoDaLista( Lista* listPtr, Lista* novoNo, int infoDoNo ){
 }
 
 Lista* separa( Lista* listPtr, int n ){
-	Lista* splitPoint = NULL;
+	Lista* splitPoint = (Lista*) malloc(sizeof(Lista));
 	printf( "%d",(*listPtr).info );
 	for ( Lista* proxNo ; (*proxNo).proximo != NULL ; proxNo = (*proxNo).proximo ){
 		if( (*proxNo).info == n ){
