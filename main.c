@@ -20,7 +20,8 @@ int main(){
 
 	// EX3
 	int elementos[] = {1,2,3,4};
-	Lista* ponteiroLista = constroi( 4, elementos );
-	printf("%d",(*ponteiroLista).info);
+	Lista* ponteiroLista = (Lista*) malloc( sizeof(Lista) );
+	ponteiroLista = constroi( 4, elementos );
+	printf("%d",(*(*ponteiroLista).proximo));
 	
 }
