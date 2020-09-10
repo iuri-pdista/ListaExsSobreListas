@@ -20,6 +20,19 @@ Lista* separa( Lista* listPtr, int n ){
 	return splitPoint;
 }
 
+Lista* concatena ( Lista* lista1, Lista* lista2 ){
+	printf("Entro");
+	Lista* listPtr = (Lista*) malloc( sizeof(Lista));
+	listPtr = lista1;
+	do{		
+		listPtr = (*listPtr).proximo;
+		if( (*listPtr).proximo == NULL ){
+			(*listPtr).proximo = lista2;
+		}
+	}while( (*listPtr).proximo != NULL );
+	return lista1;
+}
+
 Lista* constroi( int numDeElem, int* elementos ){
 	 Lista* inicioLista = (Lista*) malloc( sizeof(Lista) );
 	 Lista* listPtr = (Lista*) malloc( sizeof(Lista) );
