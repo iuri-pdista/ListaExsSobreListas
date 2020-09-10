@@ -22,6 +22,6 @@ int main(){
 	int elementos[] = {1,2,3,4};
 	Lista* ponteiroLista = (Lista*) malloc( sizeof(Lista) );
 	ponteiroLista = constroi( 4, elementos );
-	printf("%d",(*(*ponteiroLista).proximo));
+	printf("%d",(*ponteiroLista).info);
 	
 }
