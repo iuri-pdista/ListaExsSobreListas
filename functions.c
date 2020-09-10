@@ -21,11 +21,14 @@ Lista* separa( Lista* listPtr, int n ){
 }
 
 Lista* constroi( int numDeElem, int* elementos ){
-	Lista* listPtr = (Lista*) malloc( sizeof(Lista) );
-	Lista* novaLista = (Lista*) malloc( sizeof(Lista) );
-	novoNoDaLista( listPtr, novaLista, elementos[0] );
-	for ( int i = 1; i <= numDeElem; i++ ){
-		(*novaLista).info = elementos[i];
-	}
-	return listPtr;
+	 Lista* inicioLista = (Lista*) malloc( sizeof(Lista) );
+	 Lista* listPtr = (Lista*) malloc( sizeof(Lista) );
+	 listPtr = inicioLista; 
+	 for ( int i = 0; i < numDeElem; i++){
+		(*listPtr).info = elementos[i];
+		(*listPtr).proximo = (Lista*) malloc( sizeof(Lista) ); 
+		listPtr = (*listPtr).proximo;
+	 }
+	 (*listPtr).proximo = NULL;
+	 return inicioLista; 
 }
