@@ -1,9 +1,7 @@
-typedef struct lista{
-	int info;
-	struct lista* proximo;	
-} Lista;
 
-void novoNoDaLista( Lista* listPtr, Lista* novoNo, int infoDoNo ){
+#include "functions.h"
+
+void novoNoDaLista(Lista* listPtr, Lista* novoNo, int infoDoNo ){
 	(*listPtr).proximo = novoNo;
 	(*novoNo).info = infoDoNo;
 }
