@@ -28,7 +28,7 @@ int main(){
 	printf("%d \n",(*ponteiroLista).info);*/
 	
 
-	//EX4
+	/*EX4
 
 	Lista* listPtr = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr2 = (Lista*) malloc(sizeof(Lista));
@@ -41,5 +41,5 @@ int main(){
 	novoNoDaLista(listPtr3, listPtr4, 17);
 	novoNoDaLista(listPtr4, listPtr5, 19);
 	listPtr = retiraPrefixo( listPtr, 2);
-	printf("%d", (*listPtr).info);
+	printf("%d", (*listPtr).info);*/
 }
