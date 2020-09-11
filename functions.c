@@ -1,5 +1,6 @@
-
+#include <stdio.h>
 #include "functions.h"
+#include <stdlib.h>
 
 void novoNoDaLista(Lista* listPtr, Lista* novoNo, int infoDoNo ){
 	(*listPtr).proximo = novoNo;
@@ -53,4 +54,10 @@ Lista* retiraPrefixo( Lista* listPtr, int num ){
 		listPtr = manipulationPtr;
 	}
 	return listPtr;
+}
+
+void imprimeLista(Lista* l){
+    for(Lista*p = l; p!= NULL; p=p->proximo){
+        printf("%d", p->info);
+    }
 }

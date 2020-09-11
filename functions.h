@@ -12,3 +12,5 @@ Lista* concatena ( Lista* lista1, Lista* lista2 );
 Lista* constroi( int numDeElem, int* elementos );
 
 Lista* retiraPrefixo( Lista* listPtr, int num );
+
+void imprimeLista(Lista* l);
