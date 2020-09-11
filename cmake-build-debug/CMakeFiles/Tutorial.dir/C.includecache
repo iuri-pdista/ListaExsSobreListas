@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/guatu/CLionProjects/ListaExsSobreListas/functions.c
+
+C:/Users/guatu/CLionProjects/ListaExsSobreListas/main.c
+stdio.h
+-
+stdlib.h
+-
+functions.c
+C:/Users/guatu/CLionProjects/ListaExsSobreListas/functions.c
+

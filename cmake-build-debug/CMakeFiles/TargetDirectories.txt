@@ -1,0 +1,3 @@
+C:/Users/guatu/CLionProjects/ListaExsSobreListas/cmake-build-debug/CMakeFiles/Tutorial.dir
+C:/Users/guatu/CLionProjects/ListaExsSobreListas/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/guatu/CLionProjects/ListaExsSobreListas/cmake-build-debug/CMakeFiles/rebuild_cache.dir
