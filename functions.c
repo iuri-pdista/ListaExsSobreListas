@@ -29,6 +29,9 @@ Lista* separa( Lista* listPtr, int n ){
 	return splitPoint;
 }
 
+void connectLists( Lista* list1, Lista* list2 ){
+	(*list1).proximo = list2; 
+}
 
 Lista* concatena ( Lista* lista1, Lista* lista2 ){
 }
