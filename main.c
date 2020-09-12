@@ -4,7 +4,7 @@
 
 int main(){
 	// Ex1 
-	/*Lista* listPtr = (Lista*) malloc(sizeof(Lista));
+	Lista* listPtr = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr2 = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr3 = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr4 = (Lista*) malloc(sizeof(Lista));
@@ -16,10 +16,10 @@ int main(){
 	novoNoDaLista(listPtr4, listPtr5, 19);
 	Lista* newList = (Lista*) malloc(sizeof(Lista));
 	newList = separa( listPtr, 15);
-	printf("%d \n \n", (*newList).info);*/
-
-	//EX2
 	
+	//EX2
+	newList = concatena( listPtr, newList);
+	imprimeLista( newList);
 
 	// EX3
 	/*int elementos[] = {1,2,3,4};
@@ -29,7 +29,7 @@ int main(){
 	
 
 	//EX4
-
+	/*
 	Lista* listPtr = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr2 = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr3 = (Lista*) malloc(sizeof(Lista));
@@ -41,5 +41,5 @@ int main(){
 	novoNoDaLista(listPtr3, listPtr4, 17);
 	novoNoDaLista(listPtr4, listPtr5, 19);
 	listPtr = retiraPrefixo( listPtr, 2);
-	printf("%d", (*listPtr).info);
+	printf("%d", (*listPtr).info);*/
 }
