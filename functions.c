@@ -41,6 +41,13 @@ void connectLists( Lista* list1, Lista* list2 ){
 }
 
 Lista* concatena ( Lista* lista1, Lista* lista2 ){
+	for ( Lista* listPtr = lista1; listPtr != NULL; listPtr = (*listPtr).proximo ){
+		if( isNextNull(listPtr) == 1 ){
+			(*listPtr).proximo = lista2;
+			break;
+		}
+	}
+	return lista1;
 }
 
 Lista* constroi( int numDeElem, int* elementos ){
