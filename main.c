@@ -24,14 +24,15 @@ int main(){
 	printf("EX2\n");
 	imprimeLista( newList);
 	*/
-	// EX3
+	/*// EX3
 	int elementos[] = {1,2,3,4};
 	Lista* ponteiroLista = (Lista*) malloc( sizeof(Lista) );
 	ponteiroLista = constroi( 4, elementos );
 	printf("EX3\n");
 	imprimeLista( ponteiroLista );	
+	*/
 
-	/*//EX4
+	//EX4
 	Lista* newlistPtr = (Lista*) malloc(sizeof(Lista));
 	Lista* newlistPtr2 = (Lista*) malloc(sizeof(Lista));
 	Lista* newlistPtr3 = (Lista*) malloc(sizeof(Lista));
@@ -42,7 +43,7 @@ int main(){
 	novoNoDaLista(newlistPtr2, newlistPtr3, 15);
 	novoNoDaLista(newlistPtr3, newlistPtr4, 17);
 	novoNoDaLista(newlistPtr4, newlistPtr5, 19);
-	listPtr = retiraPrefixo( newlistPtr, 2);
+	newlistPtr = retiraPrefixo( newlistPtr, 2);
 	printf("EX4\n");
-	imprimeLista(newlistPtr);*/
+	imprimeLista(newlistPtr);
 }
