@@ -1,7 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct lista{
 	int info;
 	struct lista* proximo;	
 } Lista;
+
+void imprimeLista(Lista* l){
+    for(Lista*p = l; p!= NULL; p=p->proximo){
+        printf("%d \n", p->info);
+    }
+} 
 
 void novoNoDaLista( Lista* listPtr, Lista* novoNo, int infoDoNo ){
 	(*listPtr).proximo = novoNo;
@@ -20,17 +29,8 @@ Lista* separa( Lista* listPtr, int n ){
 	return splitPoint;
 }
 
+
 Lista* concatena ( Lista* lista1, Lista* lista2 ){
-	printf("Entro");
-	Lista* listPtr = (Lista*) malloc( sizeof(Lista));
-	listPtr = lista1;
-	do{		
-		listPtr = (*listPtr).proximo;
-		if( (*listPtr).proximo == NULL ){
-			(*listPtr).proximo = lista2;
-		}
-	}while( (*listPtr).proximo != NULL );
-	return lista1;
 }
 
 Lista* constroi( int numDeElem, int* elementos ){
