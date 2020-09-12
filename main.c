@@ -4,7 +4,7 @@
 
 int main(){
 	// Ex1 
-	/*Lista* listPtr = (Lista*) malloc(sizeof(Lista));
+	Lista* listPtr = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr2 = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr3 = (Lista*) malloc(sizeof(Lista));
 	Lista* listPtr4 = (Lista*) malloc(sizeof(Lista));
@@ -23,14 +23,13 @@ int main(){
 	newList = concatena( listPtr, newList);
 	printf("EX2\n");
 	imprimeLista( newList);
-	*/
-	/*// EX3
+	
+	//EX3
 	int elementos[] = {1,2,3,4};
 	Lista* ponteiroLista = (Lista*) malloc( sizeof(Lista) );
 	ponteiroLista = constroi( 4, elementos );
 	printf("EX3\n");
 	imprimeLista( ponteiroLista );	
-	*/
 
 	//EX4
 	Lista* newlistPtr = (Lista*) malloc(sizeof(Lista));
