@@ -68,7 +68,6 @@ Lista* constroi( int numDeElem, int* elementos ){
 Lista* retiraPrefixo( Lista* listPtr, int num ){
 	Lista* manipulationPtr = (Lista*) malloc( sizeof(Lista));
 	for ( int i = 0; i <=  num; i++ ){
-		printf("%d\n", (*listPtr).info);
 		manipulationPtr = (*listPtr).proximo;
 		free(listPtr);
 		listPtr = manipulationPtr;
