@@ -29,6 +29,13 @@ Lista* separa( Lista* listPtr, int n ){
 	return splitPoint;
 }
 
+int isNextNull( Lista* listPtr ){
+	if ( (*listPtr).proximo == NULL )
+		return 1;
+	else
+		return 0;
+}
+
 void connectLists( Lista* list1, Lista* list2 ){
 	(*list1).proximo = list2; 
 }
