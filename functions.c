@@ -57,9 +57,11 @@ Lista* constroi( int numDeElem, int* elementos ){
 	 for ( int i = 0; i < numDeElem; i++){
 		(*listPtr).info = elementos[i];
 		(*listPtr).proximo = (Lista*) malloc( sizeof(Lista) ); 
-		listPtr = (*listPtr).proximo;
+		if ( (numDeElem - i) == 1 )
+			(*listPtr).proximo = NULL;
+		else
+			listPtr = (*listPtr).proximo;
 	 }
-	 (*listPtr).proximo = NULL;
 	 return inicioLista; 
 }
 
